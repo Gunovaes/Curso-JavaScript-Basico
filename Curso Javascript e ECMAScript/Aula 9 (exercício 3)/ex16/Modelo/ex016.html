@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Contador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1>Vamos Contar</h1>
+        <p>Preencha utilizando números</p>
+        <br>
+         <div id="texto">Começe dizendo qual o ponto inicial, depois insira de quantos em quantos números quer avançar e por último diga em qual número  você quer chegar</div>
+    </header>
+    <br>
+    <section>
+        Inicio: <input type="text"  id="txtini">
+        <p>Passo: <input type="text"  id="txtpasso"></p>
+        <p>Final: <input type="text"  id="txtfim"></p>
+         <input type="button" value="Contar" onclick="contar()">
+         <p><div id="res">Preparando a contagem...</div></p>
+    </section>
+    <footer>
+        <p>&copy;gunovaes</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran SP</title>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    <h2>Insira sua Velocidade!</h2>
+    <input type="number" id="txtvel">
+    <input type="button" value="Verificar" onclick="Detran()">
+    <p><div id="res"></div></p>
+    <script>
+        function Detran(){
+            var km = document.getElementById("txtvel")
+            var vel = Number(km.value)
+            var res = document.getElementById("res")
+            res.innerHTML = `Sua velocidade atual é de ${vel} Km/h </br>` 
+            res.innerHTML += `Dirija sempre usando o cinto de segurança </br>`
+            if(vel > 60){
+            res.innerHTML += `Você ultrapassou a velocidade permitida, Multado! </br>`
+        }
+        }
+    </script>
+</body>
+</html>

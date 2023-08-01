@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaja com o Botão</title>
+    <style>
+        body{
+            font: normal 25px Arial;
+            color: wheat;  
+            background-color: rgb(156, 113, 61);
+        }div#area{
+            font: normal 20pt Arial;
+            background-color: wheat;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center; 
+             
+        }
+    </style>
+</head>
+<center><h1>Interaja</h1></center>
+<center><div id="area" onmouseenter="Entrou()" onmouseout="Saiu()" onclick="Clicou()">Interaja</div></center>
+<body>
+    <script>
+        var botão = document.getElementById("area")
+        function Entrou(){
+            botão.style.background = "green"
+            botão.innerHTML = "Entrou"
+        }function Saiu(){
+            botão.style.background = "red"
+            botão.innerHTML = "Saiu"
+        }function Clicou(){
+            botão.style.background = "blue"
+            botão.innerHTML = "Clicou"
+        }
+
+    </script>
+</body>
+</html>
