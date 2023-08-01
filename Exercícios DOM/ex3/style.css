@@ -1,0 +1,33 @@
+body{
+    background-color: blueviolet;
+    font: normal 15pt Arial;
+    color: white;
+}header{
+color: aliceblue;
+text-align: center;
+}section{
+    background-color: white;
+border-radius: 10px;
+padding: 15px;
+width: 500px;
+margin: auto;
+box-shadow: 5px 5px 10px;
+text-align: center;
+color: black;
+}footer{
+    color: aliceblue;
+    text-align: center;
+    font-size: italic;
+}.calendar th, td{
+    border: solid 1px black;
+    width:40px;
+    height: 30px;
+    color: black;
+  }.calendar{
+    text-align:center;
+  }
+input#data{
+    width: 40px;
+}input#txtdata{
+    width: 50px;
+}
