@@ -1,0 +1,1 @@
+console.log (`Você ultrapassou a velocidade permitida, Multado !`)

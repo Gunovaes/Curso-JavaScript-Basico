@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaja com o botão</title>
+    <style>
+    body{background-color: rgb(241, 241, 227);
+        font: normal 20pt Arial;
+        color: wheat ;
+     -webkit-text-stroke: 1px rgb(165, 165, 123); 
+     text-align: center;
+    }div#btn{
+        text-align: center;
+        width:100px;
+        height:100px;
+        border: 25px solid; 
+        border-color: #f00 #0f0 #00f #fc0;
+    }
+    </style>
+</head>
+<body>
+    <h1>
+        Interaja com o Botão
+    </h1>
+    <div id="btn" onclick="Clicou()" onmouseenter="Entrou()" onmouseout="Saiu()" onmousewheel="Rolou()">BTN</div>
+    <script>
+        var btn = document.getElementById("btn")
+        function Clicou(){
+        btn.innerHTML = "Clicou"
+        btn.style.background = "blue"
+        }function Entrou(){
+            btn.innerHTML = "Entrou"
+        btn.style.background = "greenyellow"
+        }function Saiu(){
+            btn.innerHTML = "Saiu"
+        btn.style.background = "red"
+    }function Saiu(){
+            btn.innerHTML = "Saiu"
+        btn.style.background = "red"
+    }function Rolou(){
+        btn.innerHTML = "Rolou"
+        btn.style.background = "Yellow"
+    }
+    </script>
+</body>
+</html>
